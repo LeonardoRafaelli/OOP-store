@@ -5,6 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+
         sistema();
     }
 
@@ -28,12 +30,12 @@ public class Main {
                 System.exit(0);
                 break;
             default: System.out.println("\nOpções disponíveis: 1,2,3.");
-                menuUsuario();
+                sistema();
                 break;
         }
     }
 
-    public static void menuUsuario(){
+    public static void menuFuncionario(){
         System.out.print("""
                 ------ MENU INICIAL FUNCIONÁRIO ------
                 1 - Logar;
@@ -48,9 +50,10 @@ public class Main {
             case 3 -> sistema();
             default -> {
                 System.out.println("\nOpções disponíveis: 1,2,3.");
-                menuUsuario();
+                menuFuncionario();
             }
         }
+
     }
 
     public static void logar(){
@@ -66,9 +69,9 @@ public class Main {
         cliente.setIdade(sc.nextInt());
         System.out.print("Email: ");
         cliente.setEmail(sc.next());
-        System.out.println("Telefone: ");
+        System.out.print("Telefone: ");
         cliente.setTelefone(sc.next());
-        System.out.println("Gênero: ");
+        System.out.print("Gênero: ");
         cliente.setGenero(sc.next());
         if(Cliente.clientes.size() == 0){
             cliente.setCadastro(1);
@@ -76,10 +79,6 @@ public class Main {
             cliente.setCadastro(Cliente.clientes.get(Cliente.clientes.size() - 1).getCadastro() + 1);
         }
         Cliente.clientes.add(cliente);
-    }
-
-    public static void menuFuncionario() {
-
     }
 
     public static void menuGerencia() {

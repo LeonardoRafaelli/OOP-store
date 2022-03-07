@@ -1,4 +1,9 @@
+
+import java.util.ArrayList;
+
 public class Funcionario extends Pessoa{
+
+    static ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
     private int matricula;
     private String senha;

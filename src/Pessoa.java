@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class Pessoa extends Endereco {
+
+    static Scanner sc = new Scanner(System.in);
 
     private String nome, cpf, email, telefone, genero;
     private int idade;

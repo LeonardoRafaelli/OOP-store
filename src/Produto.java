@@ -1,4 +1,5 @@
-public class Produto {
+public class
+Produto {
 
     private int codigo, quantidade;
     private String descricao, marca, modelo;

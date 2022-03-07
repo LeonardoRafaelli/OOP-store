@@ -46,7 +46,9 @@ public class Main {
 
         switch (opcao) {
             case 1 -> logar();
-            case 2 -> cadastrar();
+            case 2 -> {
+                cadastrar();
+            }
             case 3 -> sistema();
             default -> {
                 System.out.println("\nOpções disponíveis: 1,2,3.");
@@ -73,6 +75,19 @@ public class Main {
         cliente.setTelefone(sc.next());
         System.out.print("Gênero: ");
         cliente.setGenero(sc.next());
+        System.out.println("--- Endereço ---");
+        System.out.print("País: ");
+        cliente.setPais(sc.next());
+        System.out.print("Estado: ");
+        cliente.setEstado(sc.next());
+        System.out.print("Cidade: ");
+        cliente.setCidade(sc.next());
+        System.out.print("Rua: ");
+        cliente.setRua(sc.next());
+        System.out.print("Número: ");
+        cliente.setNumero(sc.nextInt());
+        System.out.print("Complemento: ");
+        cliente.setComplemento(sc.next());
         if(Cliente.clientes.size() == 0){
             cliente.setCadastro(1);
         } else {

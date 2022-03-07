@@ -29,9 +29,7 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public String getBairro() {
-        return bairro;
-    }
+    public String getBairro() { return bairro; }
 
     public void setBairro(String bairro) {
         this.bairro = bairro;

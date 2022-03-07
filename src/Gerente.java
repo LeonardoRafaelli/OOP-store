@@ -7,6 +7,7 @@ public class Gerente extends Funcionario{
         func.setNome(sc.next());
         System.out.print("Senha: ");
         func.setSenha(sc.next());
+        func.set
         System.out.print("Matrícula: ");
         func.setMatricula(sc.nextInt());
     }

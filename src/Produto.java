@@ -1,9 +1,21 @@
-public class
-Produto {
+import java.util.ArrayList;
+
+public class Produto {
+    static ArrayList<Produto> produtos = new ArrayList<Produto>();
 
     private int codigo, quantidade;
     private String descricao, marca, modelo;
     private double valor;
+
+
+    public Produto(int codigo, int quantidade, String descricao, String marca, String modelo, double valor) {
+        this.codigo = codigo;
+        this.quantidade = quantidade;
+        this.descricao = descricao;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.valor = valor;
+    }
 
     public int getCodigo() {
         return codigo;

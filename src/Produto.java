@@ -16,6 +16,9 @@ public class Produto {
         this.modelo = modelo;
         this.valor = valor;
     }
+    public void InsertProductInList(Produto e){
+        produtos.add(e);
+    }
 
     public int getCodigo() {
         return codigo;

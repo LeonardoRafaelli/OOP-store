@@ -7,9 +7,6 @@ public class Pessoa extends Endereco {
     private String nome, cpf, email, telefone, genero;
     private int idade;
 
-    public Pessoa() {
-
-    }
 
     public void cadastrar() {
         System.out.print("Nome: ");
@@ -22,7 +19,7 @@ public class Pessoa extends Endereco {
         this.telefone = sc.next();
         System.out.print("Gênero: ");
         this.genero = sc.next();
-        System.out.println("-- Endereço --");
+        System.out.println("---- Endereço ----");
         System.out.print("País: ");
         this.setPais(sc.next());
         System.out.print("Estado: ");
@@ -43,24 +40,7 @@ public class Pessoa extends Endereco {
 
 
     public void comprar(){
-        System.out.println("------ COMPRAR ------");
-        System.out.print("Código do Cliente: ");
-        int codigoCliente = sc.nextInt();
-        System.out.print("Matrícula do Funcionário (Vendedor): ");
-        int matriculaFunc = sc.nextInt();
-        System.out.print("Código do produto: ");
-        int codProduto = sc.nextInt();
-        System.out.print("Quantidade da compra: ");
-        int qntdCompra = sc.nextInt();
-    }
 
-    public Pessoa(String nome, String cpf, String email, String telefone, String genero, int idade) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email = email;
-        this.telefone = telefone;
-        this.genero = genero;
-        this.idade = idade;
     }
 
     public String getNome() {
